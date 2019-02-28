@@ -1,10 +1,10 @@
 import UIKit
 //Homework Assignment #3: Control Flow
 var i:Int = 0
-func Prime(n:Int)->Bool{
-    if(n>1){
-        for i in 2..<n{
-            if(n%i==0){
+func Prime(isPrime number:Int)->Bool{
+    if(number>1){
+        for i in 2..<number{
+            if(number%i==0){
                 return false
             }
         }
@@ -14,7 +14,7 @@ func Prime(n:Int)->Bool{
 }
 repeat{
     i=i+1
-    if(Prime(n:i)){
+    if(Prime(isPrime:i)){
         print("Prime")
     }else{
     if(i%3==0 && i%5==0){
@@ -27,4 +27,4 @@ repeat{
         print(i)}}
 }while(i<100)
 
-//Prime(n: 2)
+
